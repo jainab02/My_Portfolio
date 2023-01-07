@@ -1,0 +1,48 @@
+@media screen and (max-width:1000px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .searchbar {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .frontimage img {
+        width: 70vw;
+    }
+
+    .slider h2 {
+        font-size: small;
+
+    }
+
+    .slideritem {
+        width: 10vw;
+        font-size: 1ex;
+    }
+
+    button {
+        size: 1px;
+        padding: 0px 1px;
+        margin: 1px;
+    }
+
+    button p {
+        size: 1mm;
+        font: 10px small;
+    }
+
+    .container {
+        min-height: calc(100vh - 60px - 12vh);
+    }
+}

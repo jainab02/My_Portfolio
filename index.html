@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive_css.css">
+    <link rel="stylesheet" href="main.js">
+    <title>Personal Portfolio</title>
+    <script src="https://kit.fontawesome.com/4c2b6ab921.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo-no-background.png" alt="Jainab" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'm <span>JAINAB</span><br>KHATRI from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG-20210826-WA0087.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Myself JAINAB KHATRI from Government Engineering College Dahod,I am a 3rd year computer science student graduating in 2024 and skilled with C,C++,Java,HTML,CSS, Javascript and currently working in Data structures and Algorithm designs.
+                    </p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C Language<br>HTML<br>CSS<br>Javascript<br>Java <br>C++<br>Python</li>
+                            <li><span>Databases</span><br>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>No Experience</span><br>As I am a Undergraduate , I don't have any Experience. And
+                                i had worked as a coordinator in my college for various events since past 2 years</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2018</span><br>SSC from Swami Vivekanand English Medium School</li>
+                            <li><span>2018-2020</span><br>HSC-Science from Sarvodaya highschool</li>
+                            <li><span>2020-current</span><br>Government Engineering College,Dahod</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <!-- <i class="fa-solid fa-code"></i> -->
+                    <i class="fa-brands fa-edge"></i>
+                    <h2>Web Design</h2>
+                    <p>You can Contact me for your website designing.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfz_FKYAv2EGJTHzBgDLCNv8jbO61dfzsS-Pd03oM1ZVSp8AA/viewform?usp=sf_link" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>UI/UX</h2>
+                    <p>Working on it!</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>App Design</h2>
+                    <p>Working on it!</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Funny Project</h3>
+                        <p>This is a form in which submit button doesnot get stop untill you fill up all the details correctly. it will turn green and then only you can submit it.</p>
+                        <a href="fun_project.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Online shopping website</h3>
+                        <p>This is a webpage which allows to purchase the things online sitting at your home</p>
+                        <a href="online_shopping.html" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Music app</h3>
+                        <p>Working on it!</p>
+                        <a href="https://www.google.com/" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.google.com/" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contactleft">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> zainabkhatri17@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9327079336</p>
+                    <div class="socialicons">
+                        <a href="https://www.linkedin.com/in/jainab-khatri-968666212/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/ZainabKhatri3?t=hJpk8up49nuphHFhjA049Q&s=08" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://instagram.com/zainab_khatri_?igshid=Njc5ZjliZWU=" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/Jainab's Resume (2).pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contactright">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" id="" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Jainab</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablinks of tablinks) {
+                tablinks.classList.remove("active-link");
+            }
+            for (tabcontents of tabcontents) {
+                tabcontents.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            // event.currentTarget.classList.add("active-tab");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyaXIXesiuJlf7neBo1RbCsvmwlxZ0_WCAehwqzjgiBe_NRSMI0lqsncOvUcXxRaIob/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

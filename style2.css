@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=IM+Fell+Double+Pica&family=IM+Fell+English:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-bg-color: rgb(35, 201, 101);
+}
+
+header {
+    background-color: var(--main-bg-color);
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    align-self: center;
+    width: 75px;
+    height: 45px;
+    padding: 0px 30px;
+}
+
+nav ul {
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: larger;
+}
+
+nav ul li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(9, 11, 8);
+    text-decoration: none;
+    font-size: large;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+}
+
+.searchbar input {
+    width: 350px;
+    height: 17px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    margin: 0 16px 0 56px;
+}
+
+.searchbar button {
+    color: black;
+    border-radius: 6px;
+    padding: 0px 3px;
+    margin: 1px 5px 2px 17px;
+    cursor: pointer;
+}
+
+.container {
+    min-height: calc(200vh - 60px - 12vh);
+    background-color: white;
+}
+
+.frontimage img {
+    width: 70vw;
+    height: auto;
+    margin: 15px auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.content {
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.slider {
+    width: 62vw;
+    margin: 12px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slideritem {
+    width: 10vw;
+    padding: 10px;
+    margin: 0px 2px;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+button {
+    align-self: center;
+}
+
+footer {
+    background-color: var(--main-bg-color);
+    color: white;
+    height: 10vh;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-family: 'IM Fell Double Pica', serif;
+    font-family: 'IM Fell English', serif;
+}
